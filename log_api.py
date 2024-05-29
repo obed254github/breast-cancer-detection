@@ -13,6 +13,8 @@ def predict():
     # GET JSON REQUEST
     feat_data = request.json
     # CONVERT JSON to PANDAS DF (col names)
+    model = joblib.load("log_model.pkl")
+    col_names = joblib.load('columns.pkl')
     df = pd.DataFrame(feat_data)
     df = df.reindex(columns=col_names)
     # PREDICT
