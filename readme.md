@@ -129,10 +129,6 @@ Models are saved and ready for deployment.
 
 ---
 
-## 📂 Folder Structure
-
----
-
 ## 📌 Requirements
 
 - Python 3.8+
