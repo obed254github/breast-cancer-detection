@@ -1,6 +1,6 @@
 # 🧬 Breast Cancer Classification using Logistic Regression and CatBoost
 
-This repository presents a machine learning pipeline for classifying breast cancer as **malignant** or **benign** using the Wisconsin Breast Cancer dataset. Two models are explored:
+This repository presents a machine learning pipeline for classifying breast cancer as **malignant** or **benign** using the Wisconsin Breast Cancer dataset. I explored two classification models:
 
 - Logistic Regression (as a baseline)
 - CatBoostClassifier (advanced boosting model)
