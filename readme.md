@@ -57,21 +57,21 @@ This repository presents a machine learning pipeline for classifying breast canc
 
 ---
 
-## ⚙️ Logistic Regression Pipeline
+## ⚙️ Logistic Regression Model
 
 ### 🔹 Preprocessing:
 
-- StandardScaler applied
-- Data split: 75% training, 25% test
+- scaled the data using StandardScaler
+- Split the data to training and test sets. Training set was 75%, and 25% for test set.
 
 ### 🔹 Grid Search:
 
-- Tuned `C`, `penalty`, `solver`, `max_iter` using `GridSearchCV`
+- For the logistic regression model I tuned `C`, `penalty`, `solver`, `max_iter` using `GridSearchCV` from scikit-learn.
 
 ### 🔹 Evaluation:
 
-- **Test Accuracy:** ~91%
-- **AUC:** 0.98
+- **Test Accuracy:** The optimal model achieved an accuracy score of `91%`
+- **AUC:** The area under curve (AUC) was `0.98`
 
 #### • Confusion Matrix:
 
@@ -83,26 +83,26 @@ This repository presents a machine learning pipeline for classifying breast canc
 
 ![Logistic ROC](images/logistic_AUC.png)
 
-> AUC of 0.98 shows excellent discriminative power.
+> AUC of 0.98 shows excellent discriminative power of the model.
 
 ---
 
-## 🚀 CatBoostClassifier Pipeline
+## 🚀 CatBoostClassifier model
 
 ### 🔹 Grid Search:
 
-- Tuned `depth`, `iterations`, `learning_rate`, `l2_leaf_reg`
+- For CatBoostClassifier I tuned `depth`, `iterations`, `learning_rate`, `l2_leaf_reg` of the model.
 
 ### 🔹 Evaluation:
 
-- **Test Accuracy:** 90.9%
-- **AUC:** 0.98
+- **Test Accuracy:** The model achieved an accuracy score of `90.9%`.
+- **AUC:** The area under curve (AUC) was `0.98`
 
 #### • Confusion Matrix:
 
 ![CatBoost Confusion Matrix](images/catboost_confusion_matrix.png)
 
-> CatBoost slightly improved recall, reducing false negatives from 7 to 6.
+> For CatBoostClassifier there was a slightly improved recall, reducing false negatives from 7 to 6.
 
 #### • ROC Curve:
 
@@ -125,7 +125,7 @@ Both models achieved excellent performance:
 - **Logistic Regression** had slightly better precision.
 - **CatBoostClassifier** slightly reduced **false negatives**, which is crucial in medical diagnosis.
 
-Models are saved and ready for deployment.
+I saved the model `CatBoostClassifier` ready for streamlit app development.
 
 ---
 
