@@ -127,6 +127,79 @@ Both models achieved excellent performance:
 
 I saved the model `CatBoostClassifier` ready for streamlit app development.
 
+# 🧬 Breast Cancer Prediction Streamlit Web App
+
+This Streamlit web application allows users to input details of a breast tumor (e.g., measurements such as radius, perimeter, texture, etc.) and predicts whether the tumor is **benign** or **malignant** using a pre-trained CatBoost machine learning model.
+
+---
+
+## 🚀 Features
+
+- 🔢 Text input fields for tumor measurements
+- 🔮 Instant prediction of diagnosis (Benign or Malignant)
+- 🎞️ Centered GIF loading animation on prediction
+- 🧠 Model powered by `CatBoostClassifier`
+- ✅ User-friendly and responsive interface
+
+---
+
+## 🖼️ Live Loading Animation
+
+When the "Predict Diagnosis" button is clicked, a centered GIF appears temporarily to simulate a real-time prediction experience:
+
+![Loading GIF Sample](https://media.tenor.com/1tPR5fhN_AsAAAAm/world-cancer-day-survivor.webp)
+
+---
+
+## 🧩 Files
+
+- `app.py` – The Streamlit application
+- `utils/cat_boost_model.pkl` – Trained CatBoost model
+- `utils/columns.pkl` – List of features used in training
+- `GIF` - 'https://media.tenor.com/1tPR5fhN_AsAAAAm/world-cancer-day-survivor.webp'
+
+---
+
+## 🧪 How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/breast-cancer-app.git
+cd breast-cancer-app
+```
+
+### 2. Install required packages
+
+Install required packages listed in the jupyter notebook
+
+````
+
+### 3. Run the Streamlit app
+
+```bash
+streamlit run app.py
+````
+
+---
+
+## 📦 requirements.txt
+
+```txt
+streamlit
+pandas
+joblib
+catboost
+```
+
+---
+
+## 📸 Screenshot
+
+![App Screenshot](images/app.png)
+
+---
+
 ---
 
 ## 📌 Requirements
@@ -147,3 +220,4 @@ I saved the model `CatBoostClassifier` ready for streamlit app development.
 
 - Dataset courtesy of Dr. William H. Wolberg
 - University of Wisconsin Hospitals, Madison
+- Powered by CatBoost and Streamlit
