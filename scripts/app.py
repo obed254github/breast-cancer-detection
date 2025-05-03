@@ -6,8 +6,8 @@ import time
 
 
 # Load model and column names
-model = joblib.load("utils/cat_boost_model.pkl")
-columns = joblib.load("utils/columns.pkl")
+model = joblib.load("../utils/cat_boost_model.pkl")
+columns = joblib.load("../utils/columns.pkl")
 
 st.title("🧬 Breast Cancer Predictor")
 
