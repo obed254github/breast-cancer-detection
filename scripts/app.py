@@ -6,8 +6,8 @@ import time
 
 
 # Load model and column names
-model = joblib.load("../utils/cat_boost_model.pkl")
-columns = joblib.load("../utils/columns.pkl")
+model = joblib.load("utils/cat_boost_model.pkl")
+columns = joblib.load("utils/columns.pkl")
 
 st.title("🧬 Breast Cancer Predictor")
 
@@ -49,7 +49,7 @@ if st.button("Predict Diagnosis"):
             unsafe_allow_html=True,
         )
         # Simulate loading
-        time.sleep(1)
+        time.sleep(2)
 
         # Clear the loading animation
         loading.empty()
@@ -57,4 +57,4 @@ if st.button("Predict Diagnosis"):
         input_df = pd.DataFrame([input_data])
         prediction = model.predict(input_df)[0]
         label = "🟢 Benign" if prediction == 0 else "🔴 Malignant"
-        st.success(f"Predicted Diagnosis: **{label}**")
+        st.success(f"Diagnosis: **{label}**")
