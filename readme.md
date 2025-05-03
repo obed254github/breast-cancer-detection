@@ -77,7 +77,7 @@ This repository presents a machine learning pipeline for classifying breast canc
 
 ![Logistic Confusion Matrix](images/logistic_confusion_matrix.png)
 
-> Logistic regression performed well but had 7 false negatives, which are critical in cancer diagnosis.
+> Logistic regression performed well but had 27 false positives.which is a huge number. The false positives got were 0 which is a good sign in predicting if breast lumps are benign or malignant.
 
 #### • ROC Curve:
 
@@ -102,7 +102,7 @@ This repository presents a machine learning pipeline for classifying breast canc
 
 ![CatBoost Confusion Matrix](images/catboost_confusion_matrix.png)
 
-> For CatBoostClassifier there was a slightly improved recall, reducing false negatives from 7 to 6.
+> For CatBoostClassifier there was a slightly improved recall, and reduced false positives from 27 to 6. There was an increase in false negatives but it is a more consistent model.
 
 #### • ROC Curve:
 
