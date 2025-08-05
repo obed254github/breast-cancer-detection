@@ -4,7 +4,7 @@ This repository presents a machine learning pipeline for classifying breast lump
 
 - Logistic Regression (as a baseline)
 - CatBoostClassifier (advanced boosting model)
-- [Live app](https://breast-cancer-detection-iw4xkj8d9vzatwzyk9hsta.streamlit.app/)
+- [Predictions live app](https://breast-cancer-detection-iw4xkj8d9vzatwzyk9hsta.streamlit.app/)
 
 ---
 
